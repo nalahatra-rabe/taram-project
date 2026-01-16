@@ -24,6 +24,11 @@ export default function Home() {
           <span className="text-primary">arrière</span>.
         </span>
       </h1>
+
+      <p className="text-base text-white/80 font-medium md:text-xl max-w-lg sm:max-w-2xl text-center">
+        Design moderne, SEO solide, Suivi complet : on construit un site qui
+        retient vos visiteurs et vous apporte des résultats.
+      </p>
     </section>
   );
 }
