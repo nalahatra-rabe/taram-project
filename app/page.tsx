@@ -1,7 +1,12 @@
+"use client";
+import Button from "@/components/common/Button";
 import Image from "next/image";
+import {FaCalendarAlt} from "react-icons/fa";
+import {FaArrowDown} from "react-icons/fa";
+
 export default function Home() {
   return (
-    <section className="mx-auto flex max-w-6xl flex-col py-16 border justify-center items-center gap-14">
+    <section className="mx-auto flex max-w-6xl flex-col py-16  justify-center items-center gap-14">
       <div className="bg-white flex flex-row rounded-full px-10 py-5 w-fit  gap-4 items-center justify-center shadow-glow">
         <Image
           src={"/images/search-logo.png"}
@@ -29,6 +34,19 @@ export default function Home() {
         Design moderne, SEO solide, Suivi complet : on construit un site qui
         retient vos visiteurs et vous apporte des résultats.
       </p>
+      <div className="flex flex-row gap-4">
+        <Button
+          title="Prendre un rendez-vous"
+          icon={<FaCalendarAlt />}
+          onClick={() => {}}
+        />
+        <Button
+          variant="secondary"
+          title="Découvrir nos projets "
+          iconPosition="after"
+          icon={<FaArrowDown />}
+        />
+      </div>
     </section>
   );
 }
