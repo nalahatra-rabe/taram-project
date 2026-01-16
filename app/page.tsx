@@ -1,8 +1,5 @@
-"use client";
-import Button from "@/components/common/Button";
+import CallToActionSection from "@/components/ui/CallToActionSection";
 import Image from "next/image";
-import {FaCalendarAlt} from "react-icons/fa";
-import {FaArrowDown} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -34,19 +31,7 @@ export default function Home() {
         Design moderne, SEO solide, Suivi complet : on construit un site qui
         retient vos visiteurs et vous apporte des résultats.
       </p>
-      <div className="flex flex-row gap-4">
-        <Button
-          title="Prendre un rendez-vous"
-          icon={<FaCalendarAlt />}
-          onClick={() => {}}
-        />
-        <Button
-          variant="secondary"
-          title="Découvrir nos projets "
-          iconPosition="after"
-          icon={<FaArrowDown />}
-        />
-      </div>
+      <CallToActionSection />
     </section>
   );
 }
